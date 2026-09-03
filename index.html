@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Rosyad - Beranda</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="brand">Portofolio Rosyad</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">🏠 Beranda</a></li>
+                <li><a href="about.html" class="nav-link">👤 Tentang Saya</a></li>
+                <li><a href="project.html" class="nav-link">💡 Galeri Proyek</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HALAMAN BERANDA -->
+        <section id="beranda" class="page-view active">
+            <div class="hero-section">
+                <div class="hero-img-container">
+                    <!-- Referensi gambar dari folder images -->
+                    <img src="images/profile.jpg" alt="Foto Profil Rosyad" class="profile-img" onerror="this.src='https://placehold.co/220x220/1e293b/3b82f6?text=Rosyad'">
+                </div>
+                <div class="hero-content">
+                    <p class="greeting">Halo, Selamat Datang di Portofolio Saya</p>
+                    <h1>Muhammad Rosyad</h1>
+                    <p class="status">Siswa Kelas XII - Peminatan Rekayasa Perangkat Lunak / Informatika</p>
+                    <div class="cta-buttons">
+                        <a href="project.html" class="btn btn-primary">Lihat Proyek Saya</a>
+                        <a href="#kontak" class="btn btn-secondary">Hubungi Saya</a>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Ringkasan Keahlian</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>HTML & CSS</h3>
+                    <p>Membangun antarmuka web semantik dan desain responsif.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Jaringan Dasar</h3>
+                    <p>Konfigurasi IP Address, subnetting, dan simulasi jaringan.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Problem Solving</h3>
+                    <p>Analisis logika pemrograman dan pemecahan masalah teknis.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Pemrograman Dasar</h3>
+                    <p>Penguasaan algoritma dasar menggunakan C++, Python, dan JavaScript.</p>
+                </div>
+            </div>
+            
+            <!-- HALAMAN KONTAK (Digabung di Beranda bawah) -->
+            <h2 class="section-title" id="kontak">Formulir Kontak</h2>
+            <div class="contact-container">
+                <div class="card">
+                    <h2>Kirim Pesan</h2>
+                    <form onsubmit="handleContact(event)">
+                        <div class="form-group">
+                            <label for="nama">Nama Pengirim</label>
+                            <input type="text" id="nama" class="form-control" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Alamat Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="nama@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="kategori">Kategori Pesan</label>
+                            <select id="kategori" class="form-control">
+                                <option value="Pertanyaan">Pertanyaan</option>
+                                <option value="Kolaborasi">Kolaborasi</option>
+                                <option value="Saran">Saran</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan">Pesan Teks</label>
+                            <textarea id="pesan" class="form-control" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+                <div class="contact-info-box">
+                    <h3>Informasi Kontak</h3>
+                    <p><strong>Email Sekolah:</strong> rpl@sekolah.sch.id</p>
+                    <p><strong>Lokasi Kota:</strong> Jawa Timur, Indonesia</p>
+                    <p><strong>GitHub:</strong> github.com/rosyad</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Muhammad Rosyad. Hak Cipta Dilindungi.</p>
+        <ul class="social-links">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </footer>
+
+    <!-- Menghubungkan script.js eksternal -->
+    <script src="js/script.js"></script>
+</body>
+</html>
