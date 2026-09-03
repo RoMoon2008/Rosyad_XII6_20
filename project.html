@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Rosyad - Galeri Proyek</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="brand">Portofolio Rosyad</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">🏠 Beranda</a></li>
+                <li><a href="about.html" class="nav-link">👤 Tentang Saya</a></li>
+                <li><a href="project.html" class="nav-link active">💡 Galeri Proyek</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Gabungan bagian Jaringan, IoT, dan Proyek -->
+        <section id="jaringan" class="page-view active">
+            <h2 class="section-title">Modul Jaringan Komputer</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Konfigurasi IP Address</h3>
+                    <p>Pengaturan IPv4, subnet mask, gateway, dan DNS pada sistem operasi Windows/Linux.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Cisco Packet Tracer</h3>
+                    <p>Simulasi topologi jaringan LAN/WAN, routing statis, dan dynamic routing protocol.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Analisis Protokol</h3>
+                    <p>Memantau lalu lintas jaringan menggunakan Wireshark untuk troubleshooting paket data.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="iot" class="page-view active" style="margin-top: 3rem;">
+            <h2 class="section-title">Modul Internet of Things / Arduino</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Skematik Sirkuit</h3>
+                    <p>Perancangan rangkaian sensor dan aktuator menggunakan platform Wokwi / Fritzing.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Pemrograman C/C++</h3>
+                    <p>Menulis baris kode mikroprosesor ESP32/Arduino untuk membaca data sensor secara real-time.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Integrasi Sensor & Aktuator</h3>
+                    <p>Penerapan modul LCD 16x2, Servo Motor, dan Sensor Suhu DHT11.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyek" class="page-view active" style="margin-top: 3rem;">
+            <h2 class="section-title">Galeri Proyek & Kolaborasi</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <!-- Referensi gambar dari folder images -->
+                    <img src="images/project1.jpg" alt="Proyek Web" onerror="this.src='https://placehold.co/400x250/1e293b/3b82f6?text=Web+Portofolio'">
+                    <div class="gallery-desc">
+                        <h3>Website Portofolio Pribadi</h3>
+                        <p>Pengembangan situs web statis menggunakan HTML5, CSS Grid & Flexbox.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/400x250/1e293b/3b82f6?text=Smart+Home+IoT" alt="Proyek IoT">
+                    <div class="gallery-desc">
+                        <h3>Smart Home Prototype</h3>
+                        <p>Sistem kendali lampu otomatis berbasis NodeMCU ESP8266 dan Blynk.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Muhammad Rosyad. Hak Cipta Dilindungi.</p>
+        <ul class="social-links">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
